@@ -236,6 +236,7 @@ export default function VoiceInput() {
       setMatches(matchRes.data);
       setAssignedAssistant(null); // reset previous assignment
       setText("");
+      window.location.reload();
     } catch (error) {
       console.error(error);
       alert("Error creating task");
